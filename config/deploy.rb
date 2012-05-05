@@ -4,7 +4,6 @@ load 'deploy/assets'
 
 set :keep_releases, 11
 
-set :rails_env, 'production'
 set :use_sudo, false
 set :application, "sis_connect"
 
@@ -22,6 +21,7 @@ task :staging do
   role :app, "ruby-test.asc.ohio-state.edu"
   role :web, "ruby-test.asc.ohio-state.edu"
   role :db,  "ruby-test.asc.ohio-state.edu", :primary => true
+  set :rails_env, 'staging'
 end
 
 before "deploy:assets:precompile" do
