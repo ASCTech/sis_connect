@@ -28,4 +28,4 @@ before "deploy:assets:precompile" do
   run ["ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"].join(" && ")
 end
 
-after 'deploy', 'deploy:cleaup'
+after 'deploy', 'deploy:cleanup'
