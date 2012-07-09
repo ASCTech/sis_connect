@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:ASCTech/active_sis.git
+  revision: 9279e3de5cff1d9efeb0d99d72516b64abe7b26f
+  specs:
+    active_sis (0.0.1)
+      activerecord (~> 3.0)
+      activerecord-oracle_enhanced-adapter
+      rails (~> 3.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -109,6 +118,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_sis!
   activerecord-oracle_enhanced-adapter (~> 1.4.0)
   coffee-rails (~> 3.1.1)
   jquery-rails

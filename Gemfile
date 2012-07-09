@@ -5,6 +5,8 @@ gem 'rails', '3.1.3'
 gem 'sqlite3', :group => [:test, :development]
 
 gem 'json'
+gem 'active_sis', :git => 'git@github.com:ASCTech/active_sis.git'
+#gem 'active_sis', :path => '../active_sis'
 
 # Gems used only for assets and not required
 # in production environments by default.
