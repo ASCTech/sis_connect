@@ -1,10 +1,11 @@
 GIT
   remote: git@github.com:ASCTech/active_sis.git
-  revision: 3dbb8453483a3b96c2a8ae9b3587618a46a0bee9
+  revision: d5ae96a4fbf3bc18ef7f09bcebd7ac90b9e3765a
   specs:
     active_sis (0.0.1)
       activerecord (~> 3.0)
       activerecord-oracle_enhanced-adapter
+      activesupport (~> 3.0)
       rails (~> 3.0)
 
 GEM
