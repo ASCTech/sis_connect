@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:ASCTech/active_sis.git
-  revision: bac2bf3e52c636b1854a1864c6402603cc9077e0
+  revision: 573ab079f36ee9e8cb93f1fd982282d728328d9c
   specs:
     active_sis (0.0.1)
       activerecord (~> 3.0)
