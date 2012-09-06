@@ -1,6 +1,9 @@
 require 'bundler/capistrano'
 load 'deploy'
 load 'deploy/assets'
+require 'rvm/capistrano'
+
+set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
 
 set :keep_releases, 11
 
@@ -13,6 +16,7 @@ set :deploy_to, "/var/www/apps/#{application}"
 set :scm, :git
 set :repository, "git@github.com:ASCTech/sis_connect.git"
 set :branch, 'master'
+set :branch, $1 if `git branch` =~ /\* (\S+)\s/m
 set :deploy_via, :remote_cache
 
 set :user, 'deploy'
