@@ -1,1 +1,1 @@
-rvm use ree@sis_connect --create
+rvm use 1.9.3@sis_connect --create
